@@ -1,0 +1,7 @@
+node_modules/
+.env
+npm-debug.log*
+*.log
+data/*.db-shm
+data/*.db-wal
+.DS_Store
