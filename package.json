@@ -1,14 +1,14 @@
 {
   "name": "sportlog",
   "version": "1.0.0",
-  "description": "SportLog \u2014 SRM Student Achievement Portal",
+  "description": "SportLog — SRM Student Achievement Portal",
   "main": "src/server.js",
   "engines": {
-    "node": ">=18.0.0"
+    "node": "20.x"
   },
   "scripts": {
-    "start": "NODE_ENV=production node src/server.js",
-    "dev": "NODE_ENV=development nodemon src/server.js",
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
     "seed": "node scripts/seed.js",
     "reset-db": "node scripts/reset-db.js",
     "lint": "eslint src/",
