@@ -1,79 +1,85 @@
-# 🏆 SportLog — SRM Student Achievement Portal
+<div align="center">
 
-A full-stack SRMIST sports-achievement portal using a vanilla JavaScript SPA, Express, SQLite, JWT authentication and bcrypt.
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:00D9FF,50:0066FF,100:001B44&height=230&section=header&text=SPORTLOG&fontSize=72&fontColor=FFFFFF&fontAlignY=35&desc=Student%20Sports%20Achievement%20Management%20System&descAlignY=58&descSize=18&animation=fadeIn" width="100%"/>
 
-## Run locally
+<br>
 
-```bash
-npm install
-cp .env.example .env
-npm start
-```
+<img src="https://readme-typing-svg.demolab.com?font=Orbitron&weight=800&size=24&duration=2200&pause=600&color=00D9FF&center=true&vCenter=true&width=900&lines=%F0%9F%8F%86+TRACK+EVERY+ACHIEVEMENT;%F0%9F%A5%87+CELEBRATE+EVERY+ATHLETE;%F0%9F%8F%83+RECORD+EVERY+PERFORMANCE;%F0%9F%93%8A+TURN+SPORTS+DATA+INTO+INSIGHTS;%E2%9A%A1+BUILT+FOR+REAL-WORLD+SPORTS+MANAGEMENT" />
 
-Open **http://localhost:3000**.
+<br><br>
 
-For development with auto-reload:
+<a href="https://sportslog-5mkoifbur-sreejith8.vercel.app">
+<img src="https://img.shields.io/badge/%F0%9F%9A%80%20LIVE%20DEMO-00D9FF?style=for-the-badge&logo=vercel&logoColor=white" height="45"/>
+</a>
 
-```bash
-npm run dev
-```
+&nbsp;&nbsp;
 
-Optional demo data:
+<a href="https://github.com/SREEJITH-16/sportslog">
+<img src="https://img.shields.io/badge/%E2%98%81%EF%B8%8F%20SOURCE%20CODE-181717?style=for-the-badge&logo=github&logoColor=white" height="45"/>
+</a>
 
-```bash
-npm run seed
-```
+<br><br>
 
-Demo login: `RA2111003010001` / `Demo@1234`
+<img src="https://img.shields.io/badge/STATUS-PRODUCTION-00C853?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/DATABASE-TURSO-4FF8D2?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/DEPLOYMENT-VERCEL-000000?style=for-the-badge&logo=vercel"/>
+<img src="https://img.shields.io/badge/BACKEND-NODE.JS-339933?style=for-the-badge&logo=node.js&logoColor=white"/>
 
-## What was fixed
+<br><br>
 
-- Restored the missing `public/` frontend structure so Express actually serves the site.
-- Restored the missing client-side `app.js` that powers signup, login, session restore, CRUD, filtering, stats, edit/delete and UI feedback.
-- Fixed SPA routing order so browser routes work while API 404s remain JSON.
-- Added HTML escaping on dynamic data to prevent stored XSS in rendered achievement content.
-- Added consistent backend validation for registration numbers, sports, levels, categories, dates and field lengths.
-- Normalized registration numbers and email addresses during signup/login.
-- Made production JWT configuration fail fast instead of silently using a development secret.
-- Corrected “Recent Medal Winners” to include actual medal positions only.
-- Added a real test script and JavaScript syntax check.
-- Added missing Docker/Render support files and `.env.example` expected by the documented deployment.
-- Improved responsive interaction, loading states, error handling and modal keyboard behavior.
+<strong>🏆 A modern full-stack platform for recording, managing, tracking and analyzing student sports achievements.</strong>
 
-## Commands
+</div>
 
-| Command | Purpose |
-|---|---|
-| `npm start` | Production server |
-| `npm run dev` | Development server |
-| `npm run check` | Syntax-check backend and frontend |
-| `npm test` | Run automated tests |
-| `npm run seed` | Add demo data |
-| `npm run reset-db` | Recreate the SQLite database |
+---
 
-## API
+<div align="center">
 
-- `GET /health`
-- `POST /auth/signup`
-- `POST /auth/login`
-- `GET /auth/me`
-- `GET /achievements`
-- `GET /achievements/:id`
-- `POST /achievements`
-- `PUT /achievements/:id`
-- `DELETE /achievements/:id`
-- `GET /stats`
+# 🌐 LIVE APPLICATION
 
-Achievement filters: `student_name`, `sport`, `level`, `class`.
+<a href="https://sportslog-5mkoifbur-sreejith8.vercel.app">
 
-## Deployment
+<img src="https://capsule-render.vercel.app/api?type=rounded&color=0:00D9FF,50:0066FF,100:001B44&height=105&section=header&text=%F0%9F%8F%86%20OPEN%20SPORTLOG&fontSize=32&fontColor=FFFFFF&animation=twinkling" width="700"/>
 
-Docker:
+</a>
 
-```bash
-docker compose up -d --build
-```
+<br>
 
-Render reads `render.yaml` and uses the configured persistent disk for SQLite.
+### 🚀 [Launch SportLog →](https://sportslog-5mkoifbur-sreejith8.vercel.app)
 
-> Never commit `.env` or production secrets. The checked-in `.env.example` contains placeholders only.
+### 🔗 Live URL
+
+**https://sportslog-5mkoifbur-sreejith8.vercel.app**
+
+<br>
+
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=17&duration=2500&pause=700&color=00D9FF&center=true&vCenter=true&width=700&lines=%E2%9C%85+Production+Ready;%E2%98%81%EF%B8%8F+Turso+Cloud+Database;%F0%9F%9A%80+Vercel+Deployment;%F0%9F%94%90+JWT+Authentication;%E2%9A%A1+REST+API" />
+
+</div>
+
+---
+
+# 🏆 ABOUT SPORTLOG
+
+**SportLog** is a full-stack sports achievement management system created to digitally organize student athletic records, sporting events, achievements and performance information.
+
+The platform replaces scattered paper records, spreadsheets and disconnected files with a centralized, cloud-connected application.
+
+```text
+                    🏆 SPORTLOG
+                         │
+          ┌──────────────┼──────────────┐
+          │              │              │
+          ▼              ▼              ▼
+     👨‍🎓 STUDENTS     🏟️ EVENTS     🥇 AWARDS
+          │              │              │
+          └──────────────┼──────────────┘
+                         │
+                         ▼
+                   📈 PERFORMANCE
+                         │
+                         ▼
+                    📊 ANALYTICS
+                         │
+                         ▼
+                      ☁️ TURSO
